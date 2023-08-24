@@ -75,16 +75,21 @@ ADMINGO_CUSTOMIZATION = {
 ```
 ### 4. Скриншоты ###
 #### Страницы ####
-<a href="https://i.ibb.co/n3n5kLD/index.jpg" target="_blank"><img src="https://i.ibb.co/n3n5kLD/index.jpg" height="300px"></a><a href="https://i.ibb.co/D8K7ZWN/change-form.jpg" target="_blank"><img src="https://i.ibb.co/D8K7ZWN/change-form.jpg" height="300px"></a><a href="https://i.ibb.co/SsGbGgV/change-list-sidebar-collapsed.jpg" target="_blank"><img src="https://i.ibb.co/SsGbGgV/change-list-sidebar-collapsed.jpg" height="300px"></a><a href="https://i.ibb.co/zhBMQss/change-list.jpg" target="_blank"><img src="https://i.ibb.co/zhBMQss/change-list.jpg" height="300px"></a>
+![index](https://github.com/khaustiv/admingo/assets/143105312/1e84a392-f4c3-487e-9549-f46b21ce4b6b)
+![change_list_sidebar_collapsed](https://github.com/khaustiv/admingo/assets/143105312/0e7dea04-4dcc-4e08-bbed-704ec1045c4b)
+![change_form](https://github.com/khaustiv/admingo/assets/143105312/ec1b0c96-3dc2-442a-bc0d-2972cd440cb9)
 
 #### Документация ####
-<a href="https://i.ibb.co/1zrVTr2/admindoc.jpg" target="_blank"><img src="https://i.ibb.co/1zrVTr2/admindoc.jpg" height="300px"></a>
+![admindoc](https://github.com/khaustiv/admingo/assets/143105312/b7cd5970-11f3-4bf5-a080-ba43e3cd7f04)
 
 #### Светлая тема ####
-<a href="https://i.ibb.co/z49L21y/light-theme-index.jpg" target="_blank"><img src="https://i.ibb.co/z49L21y/light-theme-index.jpg" height="300px"></a><a href="https://i.ibb.co/VSvd9BK/light-theme-change-form.jpg" target="_blank"><img src="https://i.ibb.co/VSvd9BK/light-theme-change-form.jpg" height="300px"></a>
+![light_theme_index](https://github.com/khaustiv/admingo/assets/143105312/d707070d-9d36-4aed-bdfb-286d6d37a5f3)
+![light_theme_change_form](https://github.com/khaustiv/admingo/assets/143105312/dbb968f7-25c2-4937-a3c1-d0280b5e21d2)
 
 #### Аутентификация ####
-<a href="https://i.ibb.co/tP6V942/login.jpg" target="_blank"><img src="https://i.ibb.co/tP6V942/login.jpg" height="300px"></a>
+![login](https://github.com/khaustiv/admingo/assets/143105312/819582e0-97b7-4616-a1e5-806daf783dd3)
 
 #### Мобильная версия ####
-<a href="https://i.ibb.co/LYjqfQK/mobile-index.png" target="_blank"><img src="https://i.ibb.co/LYjqfQK/mobile-index.png" height="300px"></a><a href="https://i.ibb.co/SxCfLDQ/mobile-change-form.png" target="_blank"><img src="https://i.ibb.co/SxCfLDQ/mobile-change-form.png" height="300px"></a>
+![mobile_index](https://github.com/khaustiv/admingo/assets/143105312/a01a183f-a477-4e47-9f66-01a2cc2a00f3)
+![mobile_change_form](https://github.com/khaustiv/admingo/assets/143105312/a44261df-54ed-4cf6-8980-4f33557dcc17)
+
