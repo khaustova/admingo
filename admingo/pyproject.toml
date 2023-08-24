@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django-admingo"
+version = "1.0.0"
+description = "Django admin dashboard template "
+license = "GNU General Public License v3.0"
+authors = ["Irina Khaustova, irinakhaus@gmail.com"]
+maintainers = ["Irina Khaustova, irinakhaus@gmail.com"]
+readme = "README.md"
+homepage = "https://github.com/khaustiv/admingo"
+repository = "https://github.com/khaustiv/admingo"
+keywords = ["django", "dashboard", "theme", "admin", "template"]
+packages = [{ include = "admingo" }]
+include = ["admingo"]
+
+[tool.poetry.dependencies]
+python = ">=3.6.2"
+django = ">=2.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
