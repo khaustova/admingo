@@ -19,6 +19,7 @@ html[data-theme="light"],
     --color-timeline-line: #dee2e6;
     --color-code: #000747;
     --color-doc-line: #dbdbdb;
+    --color-error: #b30000;
 }
 
 html[data-theme="dark"],
@@ -308,7 +309,6 @@ footer {
 .table td {
 	padding: 7px;
 	border: none;
-	border-bottom: 3px solid var(--color-secondary);
 	font-size: 15px;
 }
 
@@ -798,10 +798,3 @@ h4.doc__title {
 .doc__back {
     margin-top: 10px;
 }
-
-
-
-
-
-
-
