@@ -8,8 +8,11 @@
 ```python
 pip install git+https://github.com/khaustiv/admingo.git
 ```
-2. В файл settings.py проекта добавьте приложение в список установленных приложений перед django.contrib.admin:
+2. В файл settings.py проекта добавьте приложение в список установленных приложений *перед* django.contrib.admin:
 ```python
+# django-project/settings.py
+...
+
 INSTALLED_APPS = [
     'admingo',
     'django.contrib.admin',
@@ -22,56 +25,100 @@ INSTALLED_APPS = [
 ADMINGO_CUSTOMIZATION = {
     # Название, отображаемое в боковой панели
     'dashboard_name': 'Админпанель',
-    # Заголовок главной страницы сайта администратора
+
+    # Заголовок главной страницы
     'dashboard_title': 'Панель администратора',
+
     # Модель для поиска, поле которого находится в верхней навигационной панели
     'search_model': '',
+
     # Иконки для приложений в боковой панели. Если не указано, то иконка по умолчанию - круг
     'sidebar_icons': {
         'auth.user': 'person', 
         'auth.group': 'groups',
     },
+
     # Приложения, которые нужно скрыть в боковой панели и в списке приложений
     'hidden_apps': [],
+
     # Модели, которые нужно скрыть в боковой панели и в списке приложений
     'hidden_models': [],
+
     # Порядок приложений и моделей в боковой панели и в списке приложений. 
     # Можно указывать не все, тогда сортировка идёт по алфавиту.
     'apps_order': [],
+    
     # Дополнительные ссылки отображаются на боковой панели в соответствии с
     # указанным приложением, и представляют собой список словарей, где ключём
     # является приложение, а значением - список параметров каждой ссылки:
-    #{'приложение': [
-    # {'name': 'Ссылка 1', 'admin_url': '/admin/link1/', 'icon': 'circle'},
-    # {'name': 'Ссылка 2', 'admin_url': '/admin/link2/', 'icon': 'circle'},
-    # ]}
+    # {
+    #   'приложение': [
+    #       {
+    #       'name': 'Внутренняя сылка', 
+    #       'admin_url': '/admin/link/', 
+    #       'icon': 'circle'
+    #       },
+    #       {
+    #       'name': 'Внешняя ссылка', 
+    #       'admin_url': 'https://link.ru/', 
+    #       'icon': 'circle'
+    #       },
+    #    ]
+    # }
     'extra_links' : [],
 }
 ```
 Для настройки шаблона добавьте ADMINGO_CUSTOMIZATION с необходимыми изменениями в файл settings.py проекта.
-Для иконок на боковой панели предполагается использование коллекции [Material Symbols](https://fonts.google.com/icons).
-Например, для блога ADMINGO_CUSTOMIZATION может иметь следующий вид:
+Для иконок на боковой панели предполагается использование коллекции [Material Symbols](https://fonts.google.com/icons).  
+  
+*Пример ADMINGO_CUSTOMIZATION для блога:*
 ```python
+# django-project/settings.py
+...
+
 ADMINGO_CUSTOMIZATION = {
     'search_model': 'blog.article',
     'sidebar_icons': {
-        'auth.user': 'person', 
+        'auth.user': 'person',
         'auth.group': 'groups',
         'blog.article': 'article',
         'blog.tag': 'bookmark',
-        'blog.category': 'category',
         'blog.comment': 'chat',
-        'manager.feedback': 'rate_review',
         'manager.emailsubscription': 'email',
         'django_celery_results.taskresult': 'task',
     },
-    'hidden_models': ['auth.group', 'django_celery_results.groupresult'],
-    'apps_order': ['blog', 'blog.article', 'blog.tag', 'blog.category', 'manager', 'django_celery_results', 'auth'],
-    'extra_links' : [{'manager': [
-                            {'name': 'Документация', 'admin_url': '/admin/doc/', 'icon': 'description'},
-                            ],
-                    }],
+    'hidden_apps': [
+        'admingo',
+    ],
+    'hidden_models': [
+        'auth.group', 
+        'django_celery_results.groupresult',
+    ],
+    'apps_order': [
+        'blog.article', 
+        'blog.tag', 
+        'manager.emailsubscription', 
+        'django_celery_results', 
+        'auth',
+    ],
+    'extra_links': [
+        {
+            'manager': [
+                {
+                'name': 'Документация', 
+                'admin_url': '/admin/doc/', 
+                'icon': 'description'
+                },
+                {
+                'name': 'Яндекс Метрика', 
+                'admin_url': 'https://metrika.yandex.ru/', 
+                'icon': 'monitoring'
+                }
+            ]
+        },
+    ],
 }
+
 ```
 ### 4. Скриншоты ###
 #### Страницы ####
