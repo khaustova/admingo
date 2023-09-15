@@ -55,14 +55,14 @@ ADMINGO_CUSTOMIZATION = {
     # {
     #   'приложение': [
     #       {
-    #       'name': 'Внутренняя сылка', 
-    #       'admin_url': '/admin/link/', 
-    #       'icon': 'circle'
+    #           'name': 'Внутренняя сылка', 
+    #           'admin_url': '/admin/link/', 
+    #           'icon': 'circle'
     #       },
     #       {
-    #       'name': 'Внешняя ссылка', 
-    #       'admin_url': 'https://link.ru/', 
-    #       'icon': 'circle'
+    #           'name': 'Внешняя ссылка', 
+    #           'admin_url': 'https://link.ru/', 
+    #           'icon': 'circle'
     #       },
     #    ]
     # }
@@ -106,14 +106,14 @@ ADMINGO_CUSTOMIZATION = {
         {
             'manager': [
                 {
-                'name': 'Документация', 
-                'admin_url': '/admin/doc/', 
-                'icon': 'description'
+                    'name': 'Документация', 
+                    'admin_url': '/admin/doc/', 
+                    'icon': 'description'
                 },
                 {
-                'name': 'Яндекс Метрика', 
-                'admin_url': 'https://metrika.yandex.ru/', 
-                'icon': 'monitoring'
+                    'name': 'Яндекс Метрика', 
+                    'admin_url': 'https://metrika.yandex.ru/', 
+                    'icon': 'monitoring'
                 }
             ]
         },
