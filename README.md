@@ -6,6 +6,10 @@
 ### 2. Установка ###
 1. Установите приложение:
 ```python
+git clone https://github.com/khaustiv/admingo.git
+```
+или
+```python
 pip install git+https://github.com/khaustiv/admingo.git
 ```
 2. В файл settings.py проекта добавьте приложение в список установленных приложений *перед* django.contrib.admin:
