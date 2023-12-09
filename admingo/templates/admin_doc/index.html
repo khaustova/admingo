@@ -2,19 +2,19 @@
 {% load i18n %}
 
 {% block breadcrumbs %}
-<div class="breadcrumbs">
-  <a href="{% url 'admin:index' %}">
+  <div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">
       <span class="material-symbols-outlined breadcrumbs-icon">
-          home
+        home
       </span>
-  </a>
-&nbsp;&#47;&nbsp;{% translate 'Documentation' %}
-</div>
+    </a>
+    &nbsp;&#47;&nbsp;{% translate 'Documentation' %}
+  </div>
 {% endblock %}
+
 {% block title %}{% translate 'Documentation' %}{% endblock %}
 
 {% block content %}
-
 <div id="content-main" class="content-card">
   <h3><a href="tags/">{% translate 'Tags' %}</a></h3>
   <p>{% translate 'List of all the template tags and their functions.' %}</p>
@@ -31,6 +31,5 @@
   <h3><a href="bookmarklets/">{% translate 'Bookmarklets' %}</a></h3>
   <p>{% translate 'Tools for your browser to quickly access admin functionality.' %}</p>
 </div>
-
 {% endblock %}
 
