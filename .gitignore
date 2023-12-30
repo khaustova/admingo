@@ -6,6 +6,7 @@ __pycache__
 db.sqlite3
 media
 core
+admingo_app
 manage.py
 
 # Backup files # 
