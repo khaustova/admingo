@@ -8,7 +8,7 @@
 ```python
 git clone https://github.com/khaustova/admingo.git
 ```
-1. В файл settings.py проекта добавьте приложение в список установленных приложений *перед* django.contrib.admin:
+2. В файл settings.py проекта добавьте приложение в список установленных приложений *перед* django.contrib.admin:
 ```python
 # django-project/settings.py
 ...
